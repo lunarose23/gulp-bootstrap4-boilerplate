@@ -36,6 +36,7 @@ gulp.task("minifyScripts", ["concatScripts"], function() {
 gulp.task('compileSass', function() {
   return gulp.src("assets/css/main.scss")
       .pipe(maps.init())
+      .pipe(sass({ includePaths : ['./css'] }))
       .pipe(sass().on('error', sass.logError))
       .pipe(autoprefixer())
       .pipe(maps.write('./'))

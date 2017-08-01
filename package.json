@@ -6,13 +6,14 @@
   "scripts": {
     "test": "echo \\\"Error: no test specified\\\" && exit 1"
   },
-  "author": "wapbamboogie",
+  "author": "EspressoNeeded",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wapbamboogie/bootstrap-4-boilerplate"
+    "url": ""
   },
   "devDependencies": {
+    "bootstrap": "https://github.com/twbs/bootstrap/tarball/v4-dev",
     "browser-sync": "^2.11.1",
     "del": "^2.2.0",
     "gulp": "^3.9.1",

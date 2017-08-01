@@ -1,1 +1,664 @@
 /* Base Styles -------------------- */
+html, body {
+  font-family: 'Hind Vadodara', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 2em 0;
+  overflow: hidden;
+}
+
+hr {
+  width: 20%;
+  border-width: 3px;
+  margin: 1em auto;
+  border-radius: 5px;
+  max-width: 100px;
+}
+
+hr.grey{
+  width: 15%;
+  border-width: 1px;
+  margin: 1em 0;
+}
+
+/***** COLORS AND TYPOLOGY *****/
+
+h1, h2, h3, h4, h5, h6, p, li, quote{
+  font-family: 'Hind Vadodara', sans-serif;
+  color: $white;
+}
+h1{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+h2, h3, h4, h5, h6, p{
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+h4{
+  line-height: 1.3em;
+}
+span, label{
+  letter-spacing: 0.2px;
+  font-weight: 200;
+  opacity: 0.8;
+  font-size: 90%;
+}
+input{
+  letter-spacing: 0.8px;
+  font-weight: 100;
+  text-transform: capitalize;
+}
+
+h6{
+  width: 70%;
+  margin: 0 auto;
+  line-height: 1.6em;
+}
+
+p{
+  font-size: 90%;
+}
+
+.title{
+  p{
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.6em;
+  }
+}
+
+hr{
+  border-color: $green;
+}
+hr.grey{
+  border-color: $lightgrey;
+}
+
+.border-left-1{
+  border-left: 1px dashed $lightgrey;
+}
+.border-top-1{
+  border-top: 1px dashed $lightgrey;
+}
+
+.btn{
+  font-size: 0.85em;
+}
+
+#introducing-vela{
+  background-color: $lightgrey;
+  h1{
+    text-transform: uppercase;
+    font-size: 400%;
+  }
+  h2{
+    color: $green;
+    text-transform: capitalize;
+  }
+  a{
+    color: $blue;
+    text-transform: capitalize;
+    letter-spacing: 0.3px;
+  }
+  .carousel{
+    h3, p{
+      color: $kindOfDarkGrey;
+    }
+  }
+  .links-box{
+    background-color: $white;
+  }
+}
+#vela-care-collaboration{
+  h1, p{
+    color: $kindOfDarkGrey;
+  }
+  h5{
+    color: $black;
+    font-weight: 700;
+  }
+  a{
+    color: $white;
+    font-size: small;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  .animated-from {
+    h4{
+      color: $green;
+    }
+  }
+  .animated-to{
+    background-color: $green;
+  }
+  h5{
+    text-transform: uppercase;
+  }
+  .animated-from-to{
+    background-color: $lightgrey;
+  }
+}
+#features-and-functionality{
+  .title{
+    h1, p{
+      color: $kindOfDarkGrey;
+    }
+  }
+  h3{
+    font-weight: 500;
+  }
+  h6{
+    color: $green;
+    font-weight: 800;
+  }
+  li, quote{
+    color: $kindOfDarkGrey;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    padding-left: 2em;
+    text-indent: -1em;
+  }
+  li::before {
+    content: "• ";
+    margin-right: 5px;
+    color: $green; /* or whatever color you prefer */
+  }
+  .features{
+    span{
+      color: $kindOfDarkGrey;
+      font-weight: 600;
+      font-style: italic;
+    }
+  }
+
+}
+#connect-with-vela{
+  background-color: $green;
+
+  h2{
+    color:$white;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  h6{
+    color: $white;
+    text-transform: uppercase;
+  }
+  p{
+    color: $white;
+  }
+  a{
+    color: $white;
+    font-weight: bold;
+  }
+  label, span{
+    color: $white;
+    text-transform: uppercase;
+  }
+  input{
+    background-color: $lightgreen;
+  }
+  ::-webkit-input-placeholder { /* Chrome */
+    color: $white;
+    padding-left: 1em;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: $white;
+    padding-left: 1em;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: $white;
+    opacity: 1;
+    padding-left: 1em;
+  }
+}
+
+#who-benefits{
+  .title{
+    h1, p{
+      color: $kindOfDarkGrey;
+    }
+  }
+  h4{
+    color: $white;
+  }
+  h6{
+    color: $blue;
+    text-transform: uppercase;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+#ongoing-innovation{
+  .title{
+    h1, p{
+      color: $kindOfDarkGrey;
+    }
+  }
+  h4, p{
+    color: $kindOfDarkGrey;
+  }
+  h4{
+    width: 70%;
+  }
+  .life-style h4{
+    color: $white;
+  }
+  h5{
+    color: $green;
+    font-weight: 600;
+  }
+  a{
+    color: $blue;
+  }
+  .btn.btn-primary{
+    background-color: $blue;
+    border-color: $blue;
+  }
+  .btn-primary a{
+    color: $white;
+  }
+  .btn-primary:hover, .btn-primary{
+    background-color: transparent;
+  }
+  .btn-primary:hover a{
+    color: $blue;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+
+  .squares{
+    background-color: $white;
+  }
+}
+ .life-style{
+  background-image: url('http://lorempixel.com/500/500/business');
+  background-size: cover;
+  background-position: 50% 50%;
+ }
+
+ .blur{
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+ }
+
+/**** PATTERNS ****/
+.dark-green-gradient{
+  background: rgba(107,119,82,1);
+  background: -moz-linear-gradient(left, rgba(107,119,82,1) 0%, rgba(107,119,82,0.1) 100%, rgba(107,119,82,0.17) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(107,119,82,1)), color-stop(100%, rgba(107,119,82,0.1)), color-stop(100%, rgba(107,119,82,0.17)));
+  background: -webkit-linear-gradient(left, rgba(107,119,82,1) 0%, rgba(107,119,82,0.1) 100%, rgba(107,119,82,0.17) 100%);
+  background: -o-linear-gradient(left, rgba(107,119,82,1) 0%, rgba(107,119,82,0.1) 100%, rgba(107,119,82,0.17) 100%);
+  background: -ms-linear-gradient(left, rgba(107,119,82,1) 0%, rgba(107,119,82,0.1) 100%, rgba(107,119,82,0.17) 100%);
+  background: linear-gradient(to right, rgba(107,119,82,1) 0%, rgba(107,119,82,0.1) 100%, rgba(107,119,82,0.17) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b7752', endColorstr='#6b7752', GradientType=1 );
+}
+.grey-gradient{
+  background: rgba(92,101,104,0.1);
+  background: -moz-linear-gradient(top, rgba(92,101,104,0.1) 0%, rgba(92,101,104,0.61) 69%, rgba(92,101,104,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(92,101,104,0.1)), color-stop(69%, rgba(92,101,104,0.61)), color-stop(100%, rgba(92,101,104,1)));
+  background: -webkit-linear-gradient(top, rgba(92,101,104,0.1) 0%, rgba(92,101,104,0.61) 69%, rgba(92,101,104,1) 100%);
+  background: -o-linear-gradient(top, rgba(92,101,104,0.1) 0%, rgba(92,101,104,0.61) 69%, rgba(92,101,104,1) 100%);
+  background: -ms-linear-gradient(top, rgba(92,101,104,0.1) 0%, rgba(92,101,104,0.61) 69%, rgba(92,101,104,1) 100%);
+  background: linear-gradient(to bottom, rgba(92,101,104,0.1) 0%, rgba(92,101,104,0.61) 69%, rgba(92,101,104,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c6568', endColorstr='#5c6568', GradientType=0 );
+}
+.polka-gradient {
+  background:
+      -moz-radial-gradient(lightgrey 11%, transparent 5%),
+      -moz-radial-gradient(lightgrey 11%, transparent 5%),
+      #ececec;
+  background:
+      -webkit-radial-gradient(lightgrey 11%, transparent 5%),
+      -webkit-radial-gradient(lightgrey 11%, transparent 5%),
+      #ececec;
+  background-position: 0 0, 80px 80px;
+  
+  -webkit-background-size:10px 10px;
+  -moz-background-size:10px 10px;
+  background-size:10px 10px;
+}
+.green-gradient {
+  background-color: $green; 
+  background: url('/app/images/x_mark.svg'); 
+  background-position: 0 0, 80px 80px; 
+  -webkit-background-size:20px 20px;
+  -moz-background-size:20px 20px;
+  background-size:20px 20px;
+}
+
+/**** SVG ********/
+.care-svg, .dot-svg{
+  max-width: 300px;
+}
+.care-svg{
+  position: absolute;
+  top: 20%;
+  right: -25%;
+  opacity: 0.5;
+  .st0, .st1, .st2, .st3, .st4, .st5{
+    stroke: rgba(0,0,0,0.1)!important;
+  }
+}
+
+.care-svg{
+  .st0{fill:none;stroke:#BBC6C3;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+  .st1{fill:none;stroke:#BCC6C3;stroke-width:7.4552;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:0,17.0406;}
+  .st2{fill:none;stroke:#FFFFFF;stroke-width:12.619;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+  .st3{fill:none;stroke:#7DC24A;stroke-width:18.5357;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0,83.8848;}
+  .st4{fill:none;stroke:#7DC24A;stroke-width:11.5498;stroke-miterlimit:10;}
+}
+
+.dot-svg{
+  position: absolute;
+  top: 5%;
+  .st0{display:none;}
+  .st1{display:inline;fill:none;stroke:#7DC24A;stroke-width:28.6071;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0,152.5547;}
+  .st2{fill:none;stroke:#BBC6C3;stroke-width:6.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+  .st3{fill:none;}
+  .st4{fill:none;stroke:#BBC6C3;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:0,12;}
+  .st5{fill:#7DC24A;}
+  .st6{fill:#FFFFFF;}
+}
+.dot-svg.close{
+  opacity: 0.5;
+  .st0, .st1, .st2, .st3, .st4, .st5{
+    stroke: rgba(0,0,0,0.1)!important;
+  }
+}
+
+/**** BUTTONS ****/
+
+.btn.btn-primary a:hover{
+  text-decoration: none;
+}
+
+#introducing-vela{
+  .btn-primary, .btn-primary a{
+    background-color: $blue;
+    border-color:$blue;
+    color: $white;
+    text-transform: uppercase;
+  }
+  .btn-primary:hover, .btn-primary:hover a{
+    background-color: transparent;
+    border-color:$blue;
+    color: $blue;
+    text-transform: uppercase;
+  }
+}
+.hs-button{
+  background-color: $white!important;
+  border-color: $white;
+  color: $blue;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent!important;
+  font-size: 1rem;
+  border-radius: .25rem;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.hs-button:hover{
+  background-color: $blue!important;
+  border-color: $blue!important;
+  color: $white;
+}
+
+.hs-button, .btn{
+  padding: 1rem 2rem;
+  -webkit-box-shadow: 5px 5px 16px -1px $darkGrey;
+  -moz-box-shadow: 5px 5px 16px -1px $darkGrey;
+  box-shadow: 5px 5px 16px -1px $darkGrey;
+}
+
+/**** INPUTS ****/
+#connect-with-vela{
+  input{
+    border-width: 0;
+    margin-bottom: 2em;
+  }
+  ul.hs-error-msgs.inputs-list{
+    display: none!important;
+  }
+}
+
+
+/***** IMAGES *****/
+#introducing-vela{
+  img{
+    width: 100%;
+    height: auto;
+    padding: 2em 0;
+  }
+}
+/**** ARROW *****/
+
+.arrow {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 10px 15px 10px 10px;
+    position: relative;
+    text-decoration: none;
+}
+
+.arrow:before, .arrow:after {
+    border-right: 2px solid;
+    content: '';
+    display: block;
+    height: 8px;
+    margin-top: -6px;
+    position: absolute;
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    right: 5px;
+    top: 48%;
+    width: 0;
+}
+
+.arrow:after {
+    margin-top: -1px;
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.arrow:hover, .arrow:focus,
+.arrow:hover:before, .arrow:hover:after,
+.arrow:focus:before, .arrow:focus:after {
+    color: inherit;
+}
+
+.circle-arrow{
+  positon: absolute;
+  top: 40%;
+}
+
+/**** CAROUSEL ****/
+.carousel{
+  width:100%;
+  .carousel-inner{
+    height:100%;
+  }
+  .carousel-indicators{
+    bottom: -10px;
+    li {
+    margin-top: 1em;
+    position: relative;
+    -webkit-box-flex: 1;
+    max-width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+    flex: 1 0 auto;
+    } 
+    .active{
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+  .carousel-caption {
+    position: initial;
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon{
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: {
+      top: 3px solid $darkGrey;
+      left: 3px solid $darkGrey;
+    }
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+    color: transparent;
+    &:before {
+      display: block;
+      height: 200%;
+      width: 200%; 
+      margin: {
+        left: -50%;
+        top: -50%;
+      }
+      content: "";
+      transform: rotate(45deg);
+    }
+    
+    &.prev {
+      transform: rotate(-45deg);  
+      left: 0;
+    }
+    
+    &.next {
+      transform: rotate(135deg);  
+      right: 0;
+    }
+  } 
+  .carousel-control-next-icon{
+    background-image: none;
+    transform: rotate(135deg);
+  }
+  .carousel-control-prev-icon{
+    background-image: none;
+    transform: rotate(-45deg);
+  }
+}
+
+
+
+#introducing-vela{
+  .links-box{
+    border-radius:8px 8px 0 0;
+    padding: 2em 4em;
+    -webkit-box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.1);
+  }
+  .links-box-line{
+    border-radius: 0 0 8px 8px;
+    border-bottom: 8px solid $darkGrey;
+    margin-bottom: 2em;
+  }
+}
+.fill{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#who-benefits{
+  .people-image{
+    overflow: hidden;
+  }
+  .before-open{
+    position: absolute;
+    bottom: 0
+  }
+}
+
+.col-xs-12{
+  width: 100%;
+}
+.center{ 
+  margin: 0 auto; 
+}
+
+@media only screen and (max-width: 767px) {
+    #connect-with-vela {
+      h2, h6, p{
+        text-align: center!important;
+      }
+      h6{
+        margin: 0 auto!important;
+      }
+      fieldset{
+        margin: 0 auto;
+        .hs-form-field{
+          .input{
+            margin-right: 0.5em;
+            input{
+              width: 100%;
+            }
+          }
+        }
+      }
+      .hs_submit{
+        text-align: center;
+      }
+    }
+    #features-and-functionality{
+      h3, p{
+        text-align: center!important;
+        padding-right: 0!important;
+      }
+      .pr-5{
+        padding-right: 0!important;
+      }
+    }
+}
+@media only screen and (max-width: 577px) {
+    #connect-with-vela {
+      .hs-form-field{
+          width: 100%;
+          input{
+            margin-bottom: 1em;
+          }
+        }
+    }
+}
+
